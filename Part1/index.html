@@ -5,14 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Assignment 3</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            width: 10vw;
+        }
+        #button {
+            background-color: rgb(43, 144, 202);
+        }
+    </style>
 </head>
 <body>
-    <h2>Enter a Number</h2>
+    <h1>Enter a Number</h1>
     <form action=""method="post">
-        <input type="number" id="numberInput">
-        <button type= "submit" id="button">
-            Display even numbers
-        </button>
+        <div id="container">
+            <input type="number" id="numberInput">
+            <button type= "submit" id="button">
+                Display even numbers
+            </button>
+        </div>
+
     <div id="output">
         <ul id="numberList">
 
