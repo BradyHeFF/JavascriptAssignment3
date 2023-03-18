@@ -68,3 +68,29 @@ table {
     width: 300px;
     height: 300px;
   }
+
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#toc_container ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  #grid-container{
+    grid-template-columns: auto;
+  }
+  #toc_container ul {
+    display: inline;
+  }
+}
